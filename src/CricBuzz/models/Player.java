@@ -1,4 +1,10 @@
 package src.CricBuzz.models;
 
-public class Player {
+public abstract class Player {
+
+    public int playerId;
+    public String playerName;
+    public String description;
+
+
 }

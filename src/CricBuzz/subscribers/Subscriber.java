@@ -1,8 +1,9 @@
 package src.CricBuzz.subscribers;
 
-import src.CricBuzz.producers.ScoreProducer;
+import src.CricBuzz.producers.Producer;
+import src.CricBuzz.producers.Producer;
 
-public interface ScoreSubscriber {
+public interface Subscriber {
 
-    void updateScore(ScoreProducer producer);
+    void update(Producer producer);
 }
