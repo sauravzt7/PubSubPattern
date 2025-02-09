@@ -12,24 +12,29 @@ public class InningsBuilder {
     public Team team;
 
 
-    public void setInningsId(int inningsId) {
+    public InningsBuilder setInningsId(int inningsId) {
         this.inningsId = inningsId;
+        return this;
     }
 
-    public void setTeam(Team team) {
+    public InningsBuilder setTeam(Team team) {
         this.team = team;
+        return this;
     }
 
-    public void setOvers(int overs) {
+    public InningsBuilder setOvers(int overs) {
         this.overs = overs;
+        return this;
     }
 
-    public void setWickets(int wickets) {
+    public InningsBuilder setWickets(int wickets) {
         this.wickets = wickets;
+        return this;
     }
 
-    public void setRuns(int runs) {
+    public InningsBuilder setRuns(int runs) {
         this.runs = runs;
+        return this;
     }
 
     public Innings build(){

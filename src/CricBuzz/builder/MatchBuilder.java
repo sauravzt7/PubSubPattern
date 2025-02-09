@@ -19,44 +19,54 @@ public class MatchBuilder {
     public List<String> commentries;
 
 
-    public void setMatchId(int matchId) {
+    public MatchBuilder setMatchId(int matchId) {
         this.matchId = matchId;
+        return this;
     }
 
-    public void setMatchName(String matchName) {
+    public MatchBuilder setMatchName(String matchName) {
         this.matchName = matchName;
+        return this;
     }
 
-    public void setMatchType(String matchType) {
+    public MatchBuilder setMatchType(String matchType) {
         this.matchType = matchType;
+        return this;
     }
 
-    public void setRuns(int runs) {
+    public MatchBuilder setRuns(int runs) {
         this.runs = runs;
+        return this;
     }
 
-    public void setWickets(int wickets) {
+    public MatchBuilder setWickets(int wickets) {
         this.wickets = wickets;
+        return this;
     }
 
-    public void setOvers(int overs) {
+    public MatchBuilder setOvers(int overs) {
         this.overs = overs;
+        return this;
     }
 
-    public void setInnings1(Innings innings1) {
+    public MatchBuilder setInnings1(Innings innings1) {
         this.innings1 = innings1;
+        return this;
     }
 
-    public void setInnings2(Innings innings2) {
+    public MatchBuilder setInnings2(Innings innings2) {
         this.innings2 = innings2;
+        return this;
     }
 
-    public void setFirstInnings(boolean firstInnings) {
+    public MatchBuilder setFirstInnings(boolean firstInnings) {
         isFirstInnings = firstInnings;
+        return this;
     }
 
-    public void setCommentries(List<String> commentries) {
+    public MatchBuilder setCommentries(List<String> commentries) {
         this.commentries = commentries;
+        return this;
     }
 
     public Match build(){
