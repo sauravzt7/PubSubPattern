@@ -1,13 +1,22 @@
 package src.CricBuzz.models;
 
+import src.CricBuzz.builder.InningsBuilder;
+
 public class Innings {
 
-    public int inningsId;
+    private int inningsId;
+    private int runs;
+    private int wickets;
+    private int overs;
+    private Team team;
 
-    public int runs;
-    public int wickets;
-    public int overs;
-    public Team team;
+    public Innings(InningsBuilder builder){
+        this.inningsId = builder.inningsId;
+        this.runs = builder.runs;
+        this.wickets = builder.wickets;
+        this.overs = builder.overs;
+        this.team = builder.team;
+    }
 
     public int getInningsId() {
         return inningsId;

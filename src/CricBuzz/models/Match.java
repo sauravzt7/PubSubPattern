@@ -1,5 +1,7 @@
 package src.CricBuzz.models;
 
+import src.CricBuzz.builder.MatchBuilder;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,18 +19,19 @@ public class Match {
     private List<String> commentries;
 
 
-
-    public Match(int matchId, String matchName, String matchType, int runs, int wickets, int overs, Innings innings1, Innings innings2) {
-        this.matchId = matchId;
-        this.matchName = matchName;
-        this.matchType = matchType;
-        this.runs = runs;
-        this.wickets = wickets;
-        this.overs = overs;
-        this.innings1 = innings1;
-        this.innings2 = innings2;
-        this.commentries = new ArrayList<>();
+    public Match(MatchBuilder builder) {
+        this.matchId = builder.matchId;
+        this.matchName = builder.matchName;
+        this.matchType = builder.matchType;
+        this.runs = builder.runs;
+        this.wickets = builder.wickets;
+        this.overs = builder.overs;
+        this.innings1 = builder.innings1;
+        this.innings2 = builder.innings2;
+        this.isFirstInnings = builder.isFirstInnings;
+        this.commentries = builder.commentries != null ? builder.commentries : new ArrayList<>();
     }
+
 
 
     public List<String> getCommentries() {
